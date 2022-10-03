@@ -1,0 +1,40 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.row .col {
+    background-color: grayscale;
+    padding: 10px;
+    border: 1px solid green;
+}
+
+.row .col img{
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .row .col{
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .row .col {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .row .col {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .row .col {
+        width: 16.666667%;
+    }
+}
