@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <span>1.display: grid</span>
+        <div class="grid grid0">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+        <span>2.display: inline-grid</span>
+
+        <div class="grid grid1">
+                <div class="column column1">1</div>
+                <div class="column column2">2</div>
+                <div class="column column3">3</div>
+                <div class="column column4">4</div>
+                <div class="column column5">5</div>
+                <div class="column column6">6</div>
+                <div class="column column7">7</div>
+                <div class="column column8">8</div>
+                <div class="column column9">9</div>
+        </div>
+        <span>3.grid-template-columns:% </span>
+        <div class="grid grid2">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>4.fr 分配剩余空间</span>
+        <div class="grid grid3">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>5.auto 优先于fr获取最小空间，分配剩余空间</span>
+        <div class="grid grid4">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>6.auto 优先于fr获取最小空间，分配剩余空间</span>
+        <div class="grid grid5">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+        <span>7.grid-template-columns: repeat(3,33.333%)</span>
+        <div class="grid grid6">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+        <span>8.grid-template-columns: repeat(auto-fill,150px)</span>
+        <div class="grid grid7">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>9.grid-template-columns: minmax(min,max)</span>
+        <div class="grid grid8">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>10.grid-auto-flow:column</span>
+        <div class="grid grid9">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>11.grid-auto-flow:row-danse</span>
+        <div class="grid grid11">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>12.grid-auto-rows 未定义的行</span>
+        <div class="grid grid12">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+            <div class="column column10">10</div>
+        </div>
+
+        <span>13.gap 行间距列间距</span>
+        <div class="grid grid13">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>14.grid-template-areas 行间距列间距</span>
+        <div class="grid grid14">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>15.align-items 垂直方向对齐方式 start end</span>
+        <div class="grid grid15">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>16.justify-items 水平方向对齐方式 left right center</span>
+        <div class="grid grid16">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>17.align-items justify-items 垂直水平居中</span>
+        <div class="grid grid17">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>18.align-content center</span>
+        <div class="grid grid18">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>19.align-content space-evenly</span>
+        <div class="grid grid19">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>20.align-content space-between</span>
+        <div class="grid grid20">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>21.align-content space-around</span>
+        <div class="grid grid21">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>22 grid-row-start/end grid-column-start/end</span>
+        <div class="grid grid22">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <div class="grid grid23">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>24.grid-row grid-column</span>
+        <div class="grid grid24">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>25.grid-area name</span>
+        <div class="grid grid25">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>26.grid-area position</span>
+        <div class="grid grid26">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <span>27.align-self justify-self</span>
+        <div class="grid grid27">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <div class="grid grid28">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+
+        <div class="grid grid29">
+            <div class="column column1">1</div>
+            <div class="column column2">2</div>
+            <div class="column column3">3</div>
+            <div class="column column4">4</div>
+            <div class="column column5">5</div>
+            <div class="column column6">6</div>
+            <div class="column column7">7</div>
+            <div class="column column8">8</div>
+            <div class="column column9">9</div>
+        </div>
+    </div>
+</body>
+
+</html>
