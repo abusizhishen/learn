@@ -5,62 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>learn swiper</title>
-
+    <title>Document</title>
 </head>
-
-<body>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">1</div>
-            <div class="swiper-slide">2</div>
-            <div class="swiper-slide">3</div>
-            <div class="swiper-slide">4</div>
-            <div class="swiper-slide">5</div>
-            <div class="swiper-slide">6</div>
-            <div class="swiper-slide">6</div>
-        </div>
-    </div>
-</body>
-
 <style>
     html,
+    body,
+    .tab {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
     body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
+        padding: 24px;
+        box-sizing: border-box;
     }
 
-    .mySwiper {
-        width: 100%;
-        height: 100%;
-        background: #fff;
+    .tab-header {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
     }
 
-    .swiper-wrapper {
-        width: 100%;
-        height: 100%;
-        background: #fff;
+    .tab-header div {
+        box-sizing: border-box;
+        border-bottom: 5px solid transparent;
     }
+
+    .tab-header div.active {
+        color: skyblue;
+        border-bottom: 5px solid skyblue;
+    }
+
+    .tab-header div:hover {
+        border-bottom: 5px solid skyblue;
+    }
+
+
 
     .swiper-slide {
-        display: flex;
         width: 100%;
-        margin: 0 auto;
-        background-color: aqua;
-        justify-content: center;
-        align-items: center;
-        line-height: 50px;
-        font-size: 20px;
-        font-weight: 300;
+        height: 20%;
+    }
+
+    .swiper-wrapper ul {
+        list-style-type: none;
+        margin: 0;
+        width: 100%;
     }
 </style>
+
+<body>
+    <div class="tab">
+        <div class="tab-header">
+            <div>在线演示</div>
+            <div>中文教程</div>
+            <div>获取swiper</div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul>
+                        <li>下载swiper</li>
+                        <li>swiper地址</li>
+                    </ul>
+                </div>
+
+                <div class="swiper-slide">
+                    <ul>
+                        <li>下载swiper</li>
+                        <li>swiper地址</li>
+                    </ul>
+                </div>
+
+                <div class="swiper-slide">
+                    <ul>
+                        <li>下载swiper</li>
+                        <li>swiper地址</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</body>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
-    var swiper = new Swiper(".mySwiper", {});
+    var tabHeader = document.querySelector('.tab-header');
+    var tabDivs = document.querySelectorAll('.tab-header div');
+
+    var swiper = new Swiper('.swiper', {
+        on: {
+            slideChange: function () {
+                console.log(this.realIndex)
+                tabDivs.forEach((item) => { item.className = "" });
+                tabDivs[this.realIndex].className = "active";
+            },
+            init: function () {
+                console.log(this.realIndex)
+            }
+        },
+    })
+
+    tabHeader.addEventListener('click', (event) => {
+        var idx = [...tabDivs].indexOf(event.target);
+        tabDivs.forEach((item) => { item.className = "" });
+        swiper.slideTo(idx);
+    }, false);
+
 </script>
 
 </html>

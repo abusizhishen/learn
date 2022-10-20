@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn swiper</title>
+
+</head>
+
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">1</div>
+            <div class="swiper-slide">2</div>
+            <div class="swiper-slide">3</div>
+            <div class="swiper-slide">4</div>
+            <div class="swiper-slide">5</div>
+            <div class="swiper-slide">6</div>
+            <div class="swiper-slide">6</div>
+        </div>
+    </div>
+</body>
+
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mySwiper {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+    }
+
+    .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+    }
+
+    .swiper-slide {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        line-height: 50px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {});
+</script>
+
+</html>
