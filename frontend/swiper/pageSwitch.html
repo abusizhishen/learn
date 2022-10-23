@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            /* overflow: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide page1"></div>
+            <div class="swiper-slide page2"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <style>
+        .swiper-container,
+        .swiper-wrapper,
+        .swiper-slide,
+        .page {
+            width: 100%;
+            height: 100%;
+        }
+
+        .page1 {
+            background: aqua;
+        }
+
+        .page2 {
+            background: yellow;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: "vertical",
+            mouseWheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+        })
+    </script>
+</body>
+
+</html>
