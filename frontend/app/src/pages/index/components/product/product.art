@@ -1,0 +1,16 @@
+<div class="product">
+    <h2 class="product-title">精选折扣</h2>
+    <ul id="product-list" class="product-list">
+        <li class="product-item">
+            <a href="./details.html>id=1">
+                <p class="product-pic">
+                    <img src="./images/product_1.png" alt="">
+                </p>
+
+                <p class="product-name">
+                    【甩尾狂欢】
+                </p>
+            </a>
+        </li>
+    </ul>
+</div>

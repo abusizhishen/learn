@@ -1,0 +1,18 @@
+<html>
+
+<body>
+
+    <div>
+        <!-- 幻灯片 -->
+
+        <div id='index-slider' class='slider-layout'>
+            {{include '.component'}}
+        </div>
+
+
+
+        <nav id="index.nav" class="nav-layout">导航</nav>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+{
+    "name": "ts-learn",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --exec ts-node index.ts"
+    }
+}
