@@ -6,10 +6,10 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import './plugins/element.js'
 
-Vue.use(ElementUI);
-/* eslint-disable no-new */
+Vue.use(ElementUI)
+
 Vue.component(App)
 new Vue({
   el: '#app',
   render: h => h(App)
-});
+})

@@ -20,6 +20,7 @@
 
 <script>
 /* eslint-disable-line */
+/* eslint eol-last: ["error", "always"] */
 export default {
   name: 'app',
   components: {
