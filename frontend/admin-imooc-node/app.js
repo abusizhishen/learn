@@ -1,23 +1,11 @@
 const express = require("express")
+const router = require('./router')
 const app = express()
-const querySql = require('./db/index')
+const bodyParser = require('body-parser')
 
-app.use(express.json());
-app.get('/', function (req,res) {
-    throw new Error("err")
-})
-
-app.post('/login', function (req,res) {
-    const {username,passwd} = req.body
-    querySql.querySql(`select * from user where username= '${username}' and passwd = '${passwd}' limit 1`).
-    then((result) =>{
-        if (result.length === 1 && result[0].username === username && result[0].passwd === passwd) {
-            res.json({code:0,msg:"登录成功"})
-        }else{
-            res.json({code:-1,msg:"账号或密码不匹配"})
-        }
-    })
-})
+app.use(bodyParser.urlencoded({extended:true}))
+app.use(bodyParser.json());
+app.use(router)
 
 function errHandler(err,req,res,next){
     if (err) {
